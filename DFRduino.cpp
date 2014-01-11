@@ -3,8 +3,6 @@
  * @author		Will Price
  * @date		09/01/2014
  * @see			DFRduino.h, for method documentation
- *
- *
  */
 
 #include "Arduino.h"
