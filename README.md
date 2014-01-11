@@ -49,4 +49,4 @@ void waitForServoToReadPosition() {
 ```
 
 ### Documentation
-See [willprice.org](willprice.org/notes/dfduino/doc)
+See [willprice.org](http://willprice.org/notes/dfduino/doc)
