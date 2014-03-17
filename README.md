@@ -50,3 +50,5 @@ void waitForServoToReadPosition() {
 
 ### Documentation
 See [willprice.org](http://willprice.org/notes/dfduino/doc)
+or generate it yourself with `doxygen Doxygen` and point your web broswer
+towards the index file in `html` or get the 

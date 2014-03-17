@@ -25,9 +25,9 @@
 #define LEFT_MOTOR_DIRECTION_CONTROL      4
 #define RIGHT_MOTOR_DIRECTION_CONTROL     7
 
-#define DISTANCE_SENSOR_INPUT_PIN         A5
+#define DISTANCE_SENSOR_INPUT_PIN         A0
 
-#define HORIZONTAL_SERVO_PIN              13
+#define HORIZONTAL_SERVO_PIN              11
 #define VERTICAL_SERVO_PIN                12
 class DFRduino {
 public:

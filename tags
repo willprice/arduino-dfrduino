@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DFRduino	DFRduino.cpp	/^DFRduino::DFRduino(void) {$/;"	f	class:DFRduino
+DFRduino	DFRduino.h	/^class DFRduino {$/;"	c
+DFRduino_h	DFRduino.h	18;"	d
+DISTANCE_SENSOR_INPUT_PIN	DFRduino.h	28;"	d
+HORIZONTAL_SERVO_PIN	DFRduino.h	30;"	d
+LEFT_MOTOR_DIRECTION_CONTROL	DFRduino.h	25;"	d
+LEFT_MOTOR_SPEED_CONTROL	DFRduino.h	23;"	d
+RIGHT_MOTOR_DIRECTION_CONTROL	DFRduino.h	26;"	d
+RIGHT_MOTOR_SPEED_CONTROL	DFRduino.h	24;"	d
+SOURCES	Makefile	/^SOURCES=DFRduino.cpp DFRduino.h$/;"	m
+VERTICAL_SERVO_PIN	DFRduino.h	31;"	d
+error	DFRduino.cpp	/^void DFRduino::error(char *error_message) {$/;"	f	class:DFRduino
+horizontalServo	DFRduino.h	/^	Servo horizontalServo;$/;"	m	class:DFRduino
+initMotors	DFRduino.cpp	/^void DFRduino::initMotors(void) {$/;"	f	class:DFRduino
+initSensors	DFRduino.cpp	/^void DFRduino::initSensors(void) {$/;"	f	class:DFRduino
+readDistanceInCentimeters	DFRduino.cpp	/^int DFRduino::readDistanceInCentimeters() {$/;"	f	class:DFRduino
+scaleSpeedToRangeOfInt	DFRduino.cpp	/^int DFRduino::scaleSpeedToRangeOfInt(int speed) {$/;"	f	class:DFRduino
+setDirection	DFRduino.cpp	/^void DFRduino::setDirection(char direction) {$/;"	f	class:DFRduino
+setHorizontalHeadPosition	DFRduino.cpp	/^void DFRduino::setHorizontalHeadPosition(int angle) {$/;"	f	class:DFRduino
+setMotors	DFRduino.cpp	/^void DFRduino::setMotors(int left, int right) {$/;"	f	class:DFRduino
+setVerticalHeadPosition	DFRduino.cpp	/^void DFRduino::setVerticalHeadPosition(int angle) {$/;"	f	class:DFRduino
+verticalServo	DFRduino.h	/^	Servo verticalServo;$/;"	m	class:DFRduino
