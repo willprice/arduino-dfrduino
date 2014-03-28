@@ -34,7 +34,7 @@ public:
 	/**
 	 * Set up the sensors and motors.
 	 */
-	DFRduino();
+	DFRduino(int maxLeftMotor, int maxRightMotor);
 
 	/**
 	 * Sets the direction of the robot at 100% speed:
@@ -81,6 +81,8 @@ public:
 	int readDistanceInCentimeters();
 
 private:
+        int maxLeftSpeed;
+        int maxRightSpeed;
 	/** Sets the motor pins as outputs.
 	 */
 	void initMotors();

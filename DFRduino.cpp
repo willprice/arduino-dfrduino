@@ -10,7 +10,10 @@
 
 #include <Servo.h>
 
-DFRduino::DFRduino(void) {
+DFRduino::DFRduino(int maxLeftSpeed, int maxRightSpeed) {
+        this->maxLeftSpeed = maxLeftSpeed;
+        this->maxRightSpeed = maxRightSpeed;
+
         initMotors();
         initSensors();
 }
@@ -27,19 +30,34 @@ void DFRduino::initSensors(void) {
 }
 
 void DFRduino::setDirection(char direction) {
+        static char lastDirection = '_';
+
+        int rightSpeed = maxRightSpeed;
+        int leftSpeed = maxLeftSpeed;
+
+        if (direction == lastDirection) {
+                // Wait for motors to stop
+                setMotors(0, 0);
+                delay(500);
+        }
+
+        lastDirection = direction;
         switch(direction) {
                 case ('f'):
-                        setMotors(100, 100);
+                        setMotors(leftSpeed, rightSpeed);
                         break;
                 case ('b'):
-                        setMotors(-100, -100);
+                        setMotors(-leftSpeed, -rightSpeed);
                         break;
                 case ('r'):
-                        setMotors(100, -100);
+                        setMotors(leftSpeed, -rightSpeed);
                         break;
                 case ('l'):
-                        setMotors(-100, 100);
+                        setMotors(-leftSpeed, rightSpeed);
                         break;
+                default:
+                        error("Didn't understand char");
+                        
         }
 }
 
